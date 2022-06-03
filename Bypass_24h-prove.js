@@ -25,7 +25,6 @@ minutes = minutes < 10 ? "0" + minutes : minutes
 var seconds = dates.getSeconds()
 seconds = seconds < 10 ? "0" + seconds : seconds
 var arr = [
-	//年
 	dates.getFullYear() + '-',
 	month + '-',
 	date + ' ',
