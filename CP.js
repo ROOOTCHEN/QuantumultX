@@ -13,7 +13,7 @@ QuantumultX:
 ^https?:\/\/203\.107.47\/161\:84\wecoreapi\was url response-body  url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/CP.js
 
 [mitm]
-hostname = 203.107.47.161:84.com
+hostname = 203.107.47.161:84
 **************************/
 
 const sta = typeof $task !== "undefined" ? "HTTP/1.1 200 OK" : 200;
