@@ -29,12 +29,20 @@ var arr = [
 	dates.getFullYear() + '-',
 	month + '-',
 	date + ' ',
-	//hours + ':',
-	//minutes + ':',
-	//seconds
 ]
 var arr = arr.join('')
 console.log(arr);
+
+var brr = [
+	dates.getFullYear() + '-',
+	month + '-',
+	date + ' ',
+	hours + ':',
+	minutes + ':',
+	seconds+'.0',
+]
+var brr = brr.join('')
+console.log(brr);
 
 if ($response.body) {
 	$done({
@@ -43,6 +51,7 @@ if ($response.body) {
 			"cyrq": arr,
 			"jcjgmc": "阴性",
 			"yljgmc": "武汉国药医学检验实验室",
+			"jzsjr": brr,
 		}],
 		"success": true,
 		"traceId": "60162b24d5cffa5c",
