@@ -5,7 +5,7 @@
 QuantumultX:
 
 [rewrite_local]
-https?:\/\/gw\.aoscdn.com\/base\/vip\/client\/authorizations url response-body .+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/Zuotang1.16.js
+https?:\/\/gw\.aoscdn.com\/base\/vip\/client\/authorizations url response-body .+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/Zuotang.js
 
 [mitm]
 hostname = gw.aoscdn.com
