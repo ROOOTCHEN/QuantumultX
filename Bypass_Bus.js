@@ -29,9 +29,9 @@ var arr = [
 	dates.getFullYear() + '-',
 	month + '-',
 	date + ' ',
-	hours + ':',
-	minutes + ':',
-	seconds + '.0'
+	//hours + ':',
+	//minutes + ':',
+	//seconds
 ]
 var arr = arr.join('')
 console.log(arr);
@@ -40,11 +40,9 @@ if ($response.body) {
 	$done({
 		"code": "200",
 		"data": [{
-			"cyrq": "2022-05-26",
+			"cyrq": arr,
 			"jcjgmc": "阴性",
 			"yljgmc": "武汉国药医学检验实验室",
-			"jzsjr": arr,
-			"serverTime": "2022-06-04 04:09:59"
 		}],
 		"success": true,
 		"traceId": "60162b24d5cffa5c",
