@@ -39,10 +39,21 @@ var brr = [
 	date + ' ',
 	hours + ':',
 	minutes + ':',
-	seconds+'.0',
+	seconds + '.0',
 ]
 var brr = brr.join('')
 console.log(brr);
+
+var crr = [
+	dates.getFullYear() + '-',
+	month + '-',
+	date + ' ',
+	hours + ':',
+	minutes + ':',
+	seconds,
+]
+var crr = crr.join('')
+console.log(crr);
 
 if ($response.body) {
 	$done({
@@ -52,6 +63,7 @@ if ($response.body) {
 			"jcjgmc": "阴性",
 			"yljgmc": "武汉国药医学检验实验室",
 			"jzsjr": brr,
+			"serverTime": crr
 		}],
 		"success": true,
 		"traceId": "60162b24d5cffa5c",
