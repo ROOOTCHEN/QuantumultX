@@ -56,18 +56,26 @@ var crr = crr.join('')
 console.log(crr);
 
 if ($response.body) {
+	$done();
+} else {
+	$done({});
+}
+
+if ($response.body) {
 	$done({
-		"code": "200",
-		"data": [{
-			"cyrq": arr,
-			"jcjgmc": "阴性",
-			"yljgmc": "武汉国药医学检验实验室",
-			"jzsjr": brr,
-			"serverTime": crr
-		}],
-		"success": true,
-		"traceId": "60162b24d5cffa5c",
-		"appInfo": "h5-center-api"
+		body: JSON.stringify({
+			"code": "200",
+			"data": [{
+				"cyrq": arr,
+				"jcjgmc": "阴性",
+				"yljgmc": "武汉国药医学检验实验室",
+				"jzsjr": brr,
+				"serverTime": crr
+			}],
+			"success": true,
+			"traceId": "60162b24d5cffa5c",
+			"appInfo": "h5-center-api"
+		})
 	});
 } else {
 	$done({});
