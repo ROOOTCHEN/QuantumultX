@@ -16,7 +16,7 @@ hostname = whhw.tgovcloud.com
 **************************/
 
 var body = $response.body
-	.replace("color"\:.+\,"color":green");
+	.replace("color":"grey","color":green");
 		$done({
 			body
 		});
