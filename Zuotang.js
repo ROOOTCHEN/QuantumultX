@@ -1,4 +1,7 @@
 /*
+佐糖1.1.6解锁VIP
+App Store：https://apps.apple.com/cn/app/picwish/id1609584814
+解锁会员全部功能
 ***************************
 QuantumultX:
 
