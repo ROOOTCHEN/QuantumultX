@@ -16,5 +16,5 @@ hostname = whhw.tgovcloud.com
 **************************/
 
 let obj = JSON.parse($response.body);
-obj.data.attributes["color"] = green;
+obj.data.attributes["color"] = "green";
 $done({body: JSON.stringify(obj)});
