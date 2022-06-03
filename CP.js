@@ -10,7 +10,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https?:\/\/203\.107.47\/161\:84\wecoreapi\was url response-body  url script-response-body url
+^https?:\/\/203\.107.47\/161\:84\wecoreapi\was url response-body  url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/CP.js
 
 [mitm]
 hostname = 203.107.47.161:84.com
