@@ -1,9 +1,7 @@
 /*
-
-脚本功能：i武汉 武汉战疫 微信小程序 灰码&红码转绿码
+脚本功能：i武汉 武汉战疫 微信小程序 解锁24小时核酸证明
 脚本作者：RootChen
 更新时间：2022-06-04
-使用声明：️此脚本仅供学习与交流
 
 ***************************
 QuantumultX:
@@ -16,19 +14,14 @@ hostname = whhw.tgovcloud.com
 **************************/
 
 var dates = new Date();
-// 月
 var month = dates.getMonth() + 1
 month = month < 10 ? "0" + month : month
-// 日
 var date = dates.getDate() - 1
 date = date < 10 ? "0" + date : date
-// 时
-var hours = dates.getHours()
+var hours = dates.getHours() - 2
 hours = hours < 10 ? "0" + hours : hours
-// 分
-var minutes = dates.getMinutes()
+var minutes = dates.getMinutes() - 24
 minutes = minutes < 10 ? "0" + minutes : minutes
-// 秒
 var seconds = dates.getSeconds()
 seconds = seconds < 10 ? "0" + seconds : seconds
 var arr = [
@@ -41,7 +34,7 @@ var arr = [
 	seconds
 ]
 var arr = arr.join('')
-//console.log(arr);
+console.log(arr);
 
 if ($response.body) {
 	$done({
