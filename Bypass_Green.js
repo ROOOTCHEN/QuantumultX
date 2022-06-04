@@ -15,6 +15,9 @@ QuantumultX:
 hostname = whhw.tgovcloud.com
 **************************/
 
-var body = $response.body
-    .replace(/\"color\":grey/, "\"color\":green");
-$done({ body });
+var body = $response.body;
+var obj = JSON.parse(body);
+
+obj.color = green;
+body = JSON.stringify(obj);
+$done({body});
