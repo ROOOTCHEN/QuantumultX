@@ -18,6 +18,6 @@ hostname = whhw.tgovcloud.com
 var body = $response.body;
 var obj = JSON.parse(body);
 
-obj.color = green;
+obj.color = "green";
 body = JSON.stringify(obj);
 $done({body});
