@@ -17,13 +17,13 @@ hostname = whhw.tgovcloud.com
 var dates = new Date();
 var month = dates.getMonth() + 1
 month = month < 10 ? "0" + month : month
-var date = dates.getDate() - 1
+var date = dates.getDate() -1
 date = date < 10 ? "0" + date : date
-var hours = dates.getHours() - 2
+var hours = dates.getHours() +2
 hours = hours < 10 ? "0" + hours : hours
-var minutes = dates.getMinutes() - 2
+var minutes = dates.getMinutes()
 minutes = minutes < 10 ? "0" + minutes : minutes
-var seconds = dates.getSeconds()
+var seconds = dates.getSeconds() 
 seconds = seconds < 10 ? "0" + seconds : seconds
 var arr = [
 	dates.getFullYear() + '-',
