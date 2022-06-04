@@ -1,4 +1,5 @@
 /*
+
 脚本功能：i武汉 武汉战疫 微信小程序 解锁24小时核酸证明
 脚本作者：RootChen
 更新时间：2022-06-04
@@ -35,7 +36,7 @@ var arr = [
 var arr = arr.join('')
 console.log(arr);
 
-/* if ($response.body) {
+if ($response.body) {
 	$done({
 		body: JSON.stringify({
 			"msg": "执行成功",
@@ -50,4 +51,3 @@ console.log(arr);
 } else {
 	$done({});
 }
- */
