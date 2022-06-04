@@ -15,10 +15,8 @@ QuantumultX:
 hostname = whhw.tgovcloud.com
 **************************/
 
-if ($response.body) {
-	$done({
-		"color": "green"
-	});
-} else {
-	$done({});
-}
+let obj = JSON.parse($response.body);
+obj.data.attributes["color"] = "green";
+$done({
+	body: JSON.stringify(obj)
+});
