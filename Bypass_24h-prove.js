@@ -20,7 +20,7 @@ var date = dates.getDate() - 1
 date = date < 10 ? "0" + date : date
 var hours = dates.getHours() - 2
 hours = hours < 10 ? "0" + hours : hours
-var minutes = dates.getMinutes() - 24
+var minutes = dates.getMinutes() - 2
 minutes = minutes < 10 ? "0" + minutes : minutes
 var seconds = dates.getSeconds()
 seconds = seconds < 10 ? "0" + seconds : seconds
@@ -35,7 +35,7 @@ var arr = [
 var arr = arr.join('')
 console.log(arr);
 
-if ($response.body) {
+/* if ($response.body) {
 	$done({
 		body: JSON.stringify({
 			"msg": "执行成功",
@@ -50,3 +50,4 @@ if ($response.body) {
 } else {
 	$done({});
 }
+ */
