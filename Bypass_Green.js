@@ -14,11 +14,12 @@ QuantumultX:
 [mitm]
 hostname = whhw.tgovcloud.com
 **************************/
+var body = $response.body; //将java对象转为json格式的数据
+var obj = JSON.parse(body); //将JSON格式字符串转换为JavaScript对象
 
-var body = $response.body;
-var obj = JSON.replace(body);
+obj.color = 'green';
 
-obj.color = "green";
-body = JSON.stringify(obj);
-$done({body});
-r
+body = JSON.stringify(obj); //JavaScript 值转换为 JSON 字符串。
+$done({
+	body
+});
