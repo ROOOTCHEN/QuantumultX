@@ -41,7 +41,7 @@ console.log(arr);
 var body = $response.body;
 var obj = JSON.parse(body);
 
-obj.data.jzsjr = arr;
+obj.data = arr;
 
 body = JSON.stringify(obj);
 $done({
