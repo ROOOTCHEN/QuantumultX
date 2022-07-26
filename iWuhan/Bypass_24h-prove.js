@@ -6,10 +6,11 @@
 
 ***************************
 QuantumultX:
-**************************/
-// https://whhb.tgovcloud.com/epidemicbg/nucleic/infoV3?qrcCode=80ca43c65df59d9901f8914cbb3447ba
+
 [rewrite_local]
 ^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV3\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_24h-prove.js
+
+**************************/
 
 var dates = new Date();
 var month = dates.getMonth() + 1
