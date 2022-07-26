@@ -10,6 +10,9 @@ QuantumultX:
 [rewrite_local]
 ^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/vaccine\/info\/v2\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_Vaccines.js
 
+[mitm] 
+hostname = whhb.tgovcloud.com
+
 ***************************/
 
 if ($response.body) {
