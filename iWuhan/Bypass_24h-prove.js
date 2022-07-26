@@ -1,6 +1,5 @@
 /*
-
-脚本功能：i武汉 武汉战疫 微信小程序 解锁24小时核酸证明
+脚本功能：i武汉_解锁24h核酸证明
 脚本作者：RootChen
 更新时间：2022-06-04
 更新时间：2022-07-27
@@ -8,11 +7,9 @@
 ***************************
 QuantumultX:
 **************************/
+// https://whhb.tgovcloud.com/epidemicbg/nucleic/infoV3?qrcCode=80ca43c65df59d9901f8914cbb3447ba
 [rewrite_local]
 ^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV3\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_24h-prove.js
-
-[mitm]
-hostname = whhw.tgovcloud.com
 
 var dates = new Date();
 var month = dates.getMonth() + 1
