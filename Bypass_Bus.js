@@ -10,7 +10,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https?:\/\/auth-wuhan\.i-xiaoma\.com\.cn\:1443\/auth-center\/h5\/api\/hscx  url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/Bypass_Bus.js
+^https?:\/\/auth-wuhan\.i-xiaoma\.com\.cn\:1443\/auth-center\/h5\/api\/hscx url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/Bypass_Bus.js
 
 [mitm]
 hostname = auth-wuhan.i-xiaoma.com.cn
