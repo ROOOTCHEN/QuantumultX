@@ -10,7 +10,12 @@ QuantumultX:
 [rewrite_local]
 ^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV2\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_24h-prove.js
 ^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV3\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_24h-prove.js
+
+[mitm] 
+hostname = whhb.tgovcloud.com
+
 **************************/
+
 
 var dates = new Date();
 var month = dates.getMonth() + 1
