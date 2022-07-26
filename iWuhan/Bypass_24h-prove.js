@@ -40,11 +40,10 @@ if ($response.body) {
 			"msg": "执行成功",
 			"code": 0,
 			"data": [{
+				"detectOrg": "武汉希望组医学检验实验室",
+				"detectResult": "阴性",
 				"detectTime": arr,
-				"source": "2",
-				"detectOrg": "武汉国药医学检验实验室",
-				"detectResult": "阴性"
-
+				"source": "2"
 			}]
 		})
 	});
