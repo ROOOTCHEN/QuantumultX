@@ -10,6 +10,9 @@ QuantumultX:
 [rewrite_local]
 ^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/rylxdmInfo\/v2\/get\?codeId=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_Green.js
 
+[mitm] 
+hostname = whhb.tgovcloud.com
+
 **************************/
 
 var body = $response.body; //将java对象转为json格式的数据
