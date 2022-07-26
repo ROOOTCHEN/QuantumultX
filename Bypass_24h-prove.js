@@ -9,7 +9,7 @@
 QuantumultX:
 **************************/
 [rewrite_local]
-^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV3\?qrcCode\=.+  url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/Bypass_24h-prove.js
+^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV3\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/Bypass_24h-prove.js
 
 [mitm]
 hostname = whhw.tgovcloud.com
