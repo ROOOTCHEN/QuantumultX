@@ -8,7 +8,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/rylxdmInfo\/v2\/get\?codeId=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_Green.js
+^https:?\/\/whhb.tgovcloud.com\/epidemicbg\/rylxdmInfo\/v2\/(queryHealthCheck|get)\?codeId\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_Green.js
 
 [mitm] 
 hostname = whhb.tgovcloud.com
