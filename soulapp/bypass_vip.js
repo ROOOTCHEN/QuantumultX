@@ -3,7 +3,7 @@
  */
 
 [rewrite_local]
-^https:?\/\/api-pay\.soulapp\.cn\/(show|privilege)\/(superVIP|supervip)\/(detail|status).+ url script-response-body https://github.com/ROOOTCHEN/soulapp/main/bypass_vip.js
+^https:?\/\/api-pay\.soulapp\.cn\/(show|privilege)\/(superVIP|supervip)\/(detail|status).+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/soulapp/bypass_vip.js
 [mitm] 
 hostname = *.soulapp.cn
 
