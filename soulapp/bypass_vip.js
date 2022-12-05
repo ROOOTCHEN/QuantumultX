@@ -17,6 +17,6 @@ obj.data = {
 	"validTime":4102329600,
 };
 
-body = JSON.stringify(obj); //JavaScript 值转换为 JSON 字符串。
+body = JSON.stringify(obj);
 $done({
 });
