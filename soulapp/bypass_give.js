@@ -6,7 +6,7 @@
 ^https:?\/\/api-chat\.soulapp\.cn\/chat\/limitInfo\?bi\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/soulapp/bypass_give.js
 
 [mitm]
-hostname = * .soulapp.cn
+hostname = *.soulapp.cn
 
 var obj = JSON.parse($response.body);
 
