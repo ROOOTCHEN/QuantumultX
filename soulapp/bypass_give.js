@@ -3,7 +3,7 @@
 */
 
 [rewrite_local]
-^https:?\/\/api-chat\.soulapp\.cn\/chat\/limitInfo\?bi\=.+ url script-response-body https://github.com/ROOOTCHEN/soulapp/blob/main/bypass_give.js
+^https:?\/\/api-chat\.soulapp\.cn\/chat\/limitInfo\?bi\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/soulapp/bypass_give.js
 
 [mitm]
 hostname = * .soulapp.cn
