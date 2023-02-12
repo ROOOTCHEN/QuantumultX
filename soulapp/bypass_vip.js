@@ -5,7 +5,7 @@
 [rewrite_local]
 ^https:?\/\/api-pay\.soulapp.cn\/privilege\/supervip\/.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/soulapp/bypass_vip.js
 [mitm] 
-hostname = *.soulapp.cn
+hostname = soulapp.cn
 
 var obj = JSON.parse($response.body);
 
