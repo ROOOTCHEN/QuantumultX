@@ -8,23 +8,35 @@
 QuantumultX:
 
 [rewrite_local]
-^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV2\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_24h-prove.js
+^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV(2|3)\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_24h-prove.js
+
 [mitm] 
 hostname = whhb.tgovcloud.com
 
 **************************/
 
 
-var currentDate = new Date();
-var year = currentDate.getFullYear();
-var month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
-var date = currentDate.getDate().toString().padStart(2, '0');
-var hours = currentDate.getHours().toString().padStart(2, '0');
-var minutes = currentDate.getMinutes().toString().padStart(2, '0');
-var seconds = currentDate.getSeconds().toString().padStart(2, '0');
-
-var formattedDate = `${year}-${month}-${date} ${hours}:${minutes}:${seconds}`;
-console.log(formattedDate);
+var dates = new Date();
+var month = dates.getMonth() + 1
+month = month < 10 ? "0" + month : month
+var date = dates.getDate() - 1
+date = date < 10 ? "0" + date : date
+var hours = dates.getHours() + 2
+hours = hours < 10 ? "0" + hours : hours
+var minutes = dates.getMinutes()
+minutes = minutes < 10 ? "0" + minutes : minutes
+var seconds = dates.getSeconds()
+seconds = seconds < 10 ? "0" + seconds : seconds
+var arr = [
+	dates.getFullYear() + '-',
+	month + '-',
+	date + ' ',
+	hours + ':',
+	minutes + ':',
+	seconds
+]
+var arr = arr.join('')
+console.log(arr);
 
 if ($response.body) {
 	$done({
@@ -34,7 +46,7 @@ if ($response.body) {
 			"data": [{
 				"detectOrg": "武汉希望组医学检验实验室",
 				"detectResult": "阴性",
-				"detectTime": formattedDate,
+				"detectTime": arr,
 				"source": "2"
 			}]
 		})
