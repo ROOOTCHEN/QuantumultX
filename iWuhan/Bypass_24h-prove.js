@@ -16,27 +16,21 @@ hostname = whhb.tgovcloud.com
 **************************/
 
 
-var dates = new Date();
-var month = dates.getMonth() + 1
-month = month < 10 ? "0" + month : month
-var date = dates.getDate() - 1
-date = date < 10 ? "0" + date : date
-var hours = dates.getHours() + 2
-hours = hours < 10 ? "0" + hours : hours
-var minutes = dates.getMinutes()
-minutes = minutes < 10 ? "0" + minutes : minutes
-var seconds = dates.getSeconds()
-seconds = seconds < 10 ? "0" + seconds : seconds
-var arr = [
-	dates.getFullYear() + '-',
-	month + '-',
-	date + ' ',
-	hours + ':',
-	minutes + ':',
-	seconds
-]
-var arr = arr.join('')
-console.log(arr);
+var currentDate = new Date();
+var month = currentDate.getMonth() + 1;
+var date = currentDate.getDate() - 1;
+var hours = currentDate.getHours() + 2;
+var minutes = currentDate.getMinutes();
+var seconds = currentDate.getSeconds();
+
+month = month < 10 ? "0" + month : month;
+date = date < 10 ? "0" + date : date;
+hours = hours < 10 ? "0" + hours : hours;
+minutes = minutes < 10 ? "0" + minutes : minutes;
+seconds = seconds < 10 ? "0" + seconds : seconds;
+
+var formattedDate = currentDate.getFullYear() + '-' + month + '-' + date + ' ' + hours + ':' + minutes + ':' + seconds;
+console.log(formattedDate);
 
 if ($response.body) {
 	$done({
@@ -46,7 +40,7 @@ if ($response.body) {
 			"data": [{
 				"detectOrg": "武汉希望组医学检验实验室",
 				"detectResult": "阴性",
-				"detectTime": arr,
+				"detectTime": formattedDate,
 				"source": "2"
 			}]
 		})
