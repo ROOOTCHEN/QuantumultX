@@ -8,8 +8,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV(2|3)\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_24h-prove.js
-
+^https:?\/\/whhb\.tgovcloud\.com\/epidemicbg\/nucleic\/infoV2\?qrcCode\=.+ url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/iWuhan/Bypass_24h-prove.js
 [mitm] 
 hostname = whhb.tgovcloud.com
 
@@ -17,19 +16,14 @@ hostname = whhb.tgovcloud.com
 
 
 var currentDate = new Date();
-var month = currentDate.getMonth() + 1;
-var date = currentDate.getDate() - 1;
-var hours = currentDate.getHours() + 2;
-var minutes = currentDate.getMinutes();
-var seconds = currentDate.getSeconds();
+var year = currentDate.getFullYear();
+var month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+var date = currentDate.getDate().toString().padStart(2, '0');
+var hours = currentDate.getHours().toString().padStart(2, '0');
+var minutes = currentDate.getMinutes().toString().padStart(2, '0');
+var seconds = currentDate.getSeconds().toString().padStart(2, '0');
 
-month = month < 10 ? "0" + month : month;
-date = date < 10 ? "0" + date : date;
-hours = hours < 10 ? "0" + hours : hours;
-minutes = minutes < 10 ? "0" + minutes : minutes;
-seconds = seconds < 10 ? "0" + seconds : seconds;
-
-var formattedDate = currentDate.getFullYear() + '-' + month + '-' + date + ' ' + hours + ':' + minutes + ':' + seconds;
+var formattedDate = `${year}-${month}-${date} ${hours}:${minutes}:${seconds}`;
 console.log(formattedDate);
 
 if ($response.body) {
