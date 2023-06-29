@@ -1,5 +1,5 @@
 /*************************************
-
+项目名称：Pandora
 **************************************
 
 [rewrite_local]
@@ -12,7 +12,7 @@ hostname = api.revenuecat.com
 
 
 const ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
-const supportedAgents = ['totowallet', 'widget_art', 'apollo', 'Aphrodite'];
+const supportedAgents = ['totowallet'， 'widget_art'， 'apollo'， 'Aphrodite'];
 const responseBody = {};
 
 if (supportedAgents.some(agent => ua.includes(agent))) {
