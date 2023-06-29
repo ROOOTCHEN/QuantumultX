@@ -1,29 +1,25 @@
-var obj = JSON.parse($response.body);
+/*************************************
 
-// 匹配并修改键值
-if (obj.retObj && obj.retObj.isFree !== undefined) {
-  obj.retObj.isFree = false; // 将 isFree 的值修改为 false
+**************************************
+
+[rewrite_local]
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/ttqjt.js
+
+[mitm]
+hostname = api.revenuecat.com
+
+*************************************/
+
+
+const ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
+const supportedAgents = ['totowallet', 'widget_art', 'apollo', 'Aphrodite'];
+const responseBody = {};
+
+if (supportedAgents.some(agent => ua.includes(agent))) {
+  responseBody.purchase_date = "2022-09-09T09:09:09Z";
+  responseBody.expires_date = "2099-09-09T09:09:09Z";
+  responseBody.original_purchase_date = "2022-09-09T09:09:09Z";
+  responseBody.ownership_type = "PURCHASED";
 }
 
-if (obj.retObj && obj.retObj.money !== undefined) {
-  obj.retObj.money = 0; // 将 money 的值修改为 0
-}
-
-if (obj.retObj && obj.retObj.isSvip !== undefined) {
-  obj.retObj.isSvip = 2; // 将 isSvip 的值修改为 1
-}
-
-if (obj.retObj && obj.retObj.isCollect !== undefined) {
-  obj.retObj.isCollect = 0
-    ; // 将 free 的值修改为 false
-}
-
-if (obj.retObj && obj.retObj.free !== undefined) {
-  obj.retObj.free = false; // 将 free 的值修改为 false
-}
-
-
-
-var body = JSON.stringify(obj); // 将JavaScript对象转换为JSON字符串
-
-$done({ body }); // 返回修改后的响应体
+$done({ body: JSON.stringify(responseBody) });
