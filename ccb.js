@@ -1,5 +1,5 @@
 [rewrite_local]
-^https:?\/\/ebanking2\.ccb\.com\.cn\/CCBIS\/B2CMainPlat_10_MB
+^https:?\/\/ebanking2\.ccb\.com\.cn\/CCBIS\/B2CMainPlat_10_MB url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/ccb.js
 
 [mitm] 
 hostname = ebanking2.ccb.com.cn
