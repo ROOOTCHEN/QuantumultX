@@ -1,17 +1,16 @@
 [rewrite_local]
-^https:?\/\/ebanking2\.ccb\.com\.cn\/CCBIS\/B2CMainPlat_10_MB url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/ccb.js
+^https:?\/\/mobile\.cmbchina\.com\/DAccountView\/AssetAjax\/QueryFundPaasAjax\.aspx url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/ccb.js
 
 [mitm] 
-hostname = ebanking2.ccb.com.cn
-// 已经解析好的 JSON 数据对象
-var obj = JSON.parse($response.body);
+hostname = mobile.cmbchina.com
 
-// 修改字段值为 9999.99
-obj.AcBa = "9999.99";
-obj.Avl_Bal = "9999.99";
-obj.Avl_Tot_Bal = "9999.99";
-obj.Tot_AcBa = "9999.99";
+var obj = JSON.parse($response.body); // 解析 JSON 字符串为 JavaScript 对象
 
-body = JSON.stringify(obj); //JavaScript 值转换为 JSON 字符串。
+// 使用正则表达式进行模糊匹配并修改值为 999.99
+obj["$SysResult$"]["$Content$"] = obj["$SysResult$"]["$Content$"].replace(/\d+\.\d+/g, "820564.99");
+
+console.log(obj);
+
 $done({
+  body: JSON.stringify(obj) // 将 JavaScript 对象转换为 JSON 字符串。
 });
