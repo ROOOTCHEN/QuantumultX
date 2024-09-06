@@ -19,10 +19,19 @@ hostname = m.client.10010.com
         "detailFlag": "0",
         "productFee": "",
         "productName": "腾讯大王卡",
-        "startDate": "2024-09-06"
+        "startDate": "2018-05-20"
       }
     ],
     "otherProductInfo": [
+		{
+		  "orderTime": "",
+		  "productId": "91233837",
+		  "endDate": "",
+		  "productFee": "",
+		  "cancelFlag": "4",
+		  "productName": "联通5G体验包（赠送流量）",
+		  "startDate": "2024-09-16 00:00:00"
+		},
 		{
 		  "orderTime": "",
 		  "productId": "91233837",
@@ -56,7 +65,7 @@ hostname = m.client.10010.com
         "endDate": "",
         "productFee": "",
         "cancelFlag": "4",
-        "productName": "2024-09-06 00:00:00",
+        "productName": "100GB流量奖励包-次月生效3",
         "startDate": "2022-09-01 00:00:00"
       },
       {
