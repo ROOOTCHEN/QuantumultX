@@ -1,13 +1,12 @@
 /*
 [rewrite_local]
-
 ^https:\/\/m.client.10010.com\/servicebusiness\/newOrdered\/queryOrderRelationship url script-response-body https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/lt.js
-
 [mitm]
 hostname = m.client.10010.com
 **************************/
 
 (() => {
+  var body = {
   "code": "0000",
   "data": {
     "mainProductInfo": [
