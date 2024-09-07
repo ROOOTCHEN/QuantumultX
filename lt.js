@@ -18,8 +18,8 @@ hostname = m.client.10010.com
         "orderStatus": "0",
         "detailFlag": "0",
         "productFee": "",
-        "productName": "腾讯大王卡",
-        "startDate": "2018-04-26"
+        "productName": "联通造梦卡",
+        "startDate": "2024-09-07"
       }
     ],
     "otherProductInfo": [
@@ -29,9 +29,10 @@ hostname = m.client.10010.com
         "endDate": "",
         "productFee": "",
         "cancelFlag": "4",
-        "productName": "10GB流量奖励包-次月生效7",
-        "startDate": "2022-09-01 00:00:00"
+        "productName": "国内流量任性用",
+        "startDate": "2024-09-07 00:00:00"
       }
+      
     ],
     "failureSheetInfo": [],
     "contractInfo": [],
