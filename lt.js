@@ -162,7 +162,7 @@ hostname = m.client.10010.com
         "productname": "",
         "servicename": "5G网络服务质量VVIP",
         "serviceid": "50867",
-        "completedateFmt": "2023-11-01 00:00:00"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
