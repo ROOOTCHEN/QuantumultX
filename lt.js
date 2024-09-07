@@ -74,7 +74,7 @@ hostname = m.client.10010.com
     "netType": "11",
     "NewOrderedTip": "1、0元产品或非自动续订类产品，到期自动失效，无需退订；</br>2、部分合约产品，因涉及违约金的计算和收取，系统功能正逐步完善中，现阶段您可以到归属地线下营业厅进行办理，给您带来的不便，敬请谅解；</br>3、主套餐及套餐内包含的产品不可退订；</br>4、套餐详情可以前往[我的套餐]进行查看；</br>5、个别无法退订的产品，可能由于归属省分业务限制，具体详询10010。</br>6、功能产品列均为免费服务，部分收费产品需基于该列服务能力使用。",
     "commdityName": "联通造梦卡",
-    "productStartDate": "2018-04-26",
+    "productStartDate": "2024-09-07",
     "liuLiangProductInfo": [
       {
         "ziClose": "0",
@@ -148,7 +148,7 @@ hostname = m.client.10010.com
         "productname": "5G优享服务包（湖北）",
         "servicename": "5G上网服务(下行峰值2Gbps)",
         "serviceid": "53546",
-        "completedateFmt": "2024-09-09 09:43:55"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "",
@@ -395,6 +395,5 @@ hostname = m.client.10010.com
   },
   "desc": "SUCCESS"
 }
-
   $done({body: JSON.stringify(body)});
 })();
