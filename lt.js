@@ -7,7 +7,6 @@ hostname = m.client.10010.com
 
 
 (() => {
-  var body = {
   "code": "0000",
   "data": {
     "mainProductInfo": [
@@ -132,7 +131,7 @@ hostname = m.client.10010.com
     ],
     "tipFlag": "0",
     "csEntranceUrl": "https://cc.10010.com/cs/ccc/online/redirect/welcome.html?encryptdata=2uzglzqmE%2BE3MTFCD0yTuao0VYUQjqTTjM5hUEeEeMNYhgH%2FuTS59Fc4FPUNrbQ%2FlQSQ2a9vz0xV%0ArliMtvYdjH7qx4xrvc8lRQGxvDUtPuItT%2FJ2LUyu8mdWxN%2BfERvL4fa9YiXBbgyDxR%2FoMpJuElFA%0AgRWC0HZtweBmnGSDXb7vs3Ot3EJZCFEuw2%2FZE999518450wdS98e0GCQX7VhDcBS8Yx8MhPvMk%2Fb%0AkICrp129qv%2BB3WyuWqtMnoBWL3XudrezSBustQK279EQvCuD%2FjnEyiITc7ipOa52X%2BVcjrUUBxyq%0Ac%2Bm64g%3D%3D",
-    "usernumber": "155****0302",
+    "usernumber": "166****8888",
     "valueAdded": [],
     "queryTime": "2024/08/29 15:41:40",
     "serviceinfo": [
@@ -391,7 +390,7 @@ hostname = m.client.10010.com
     ],
     "csImg": "https://m1.img.10010.com/resources/7188192A31B5AE06E41B64DA6D65A9B0/20200422/png/20200422151005.png",
     "numType": "0",
-    "username": "陈**"
+    "username": "路**"
   },
   "desc": "SUCCESS"
 }
