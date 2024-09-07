@@ -61,15 +61,6 @@ hostname = m.client.10010.com
       },
       {
         "orderTime": "",
-        "productId": "91233841",
-        "endDate": "",
-        "productFee": "",
-        "cancelFlag": "4",
-        "productName": "套内资费减免包",
-        "startDate": "2024-09-07 00:00:00"
-      },
-      {
-        "orderTime": "",
         "productId": "91233842",
         "endDate": "",
         "productFee": "",
@@ -157,7 +148,7 @@ hostname = m.client.10010.com
         "productname": "5G优享服务包（湖北）",
         "servicename": "5G上网服务(下行峰值2Gbps)",
         "serviceid": "53546",
-        "completedateFmt": "2024-06-12 19:43:55"
+        "completedateFmt": "2024-09-09 09:43:55"
       },
       {
         "productmode": "",
@@ -185,7 +176,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "5G服务（SA）",
         "serviceid": "50334",
-        "completedateFmt": "2021-09-24 22:47:55"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -199,7 +190,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "流量封顶取消",
         "serviceid": "50303",
-        "completedateFmt": "2020-10-10 03:34:02"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -213,7 +204,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "VoLTE",
         "serviceid": "50106",
-        "completedateFmt": "2019-12-11 17:53:43"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -227,7 +218,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "5G/4G/3G流量提醒",
         "serviceid": "50300",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -241,7 +232,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "4G+产品服务",
         "serviceid": "50107",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -255,7 +246,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "手机上网服务",
         "serviceid": "50100",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -269,7 +260,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "不可及前转",
         "serviceid": "50022",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -283,7 +274,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "呼叫保持",
         "serviceid": "50007",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -297,7 +288,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "呼叫等待",
         "serviceid": "50006",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -311,7 +302,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "无应答前转",
         "serviceid": "50021",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -325,7 +316,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "遇忙前转",
         "serviceid": "50020",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -339,7 +330,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "国内漫游",
         "serviceid": "50014",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -353,7 +344,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "国内长途",
         "serviceid": "50010",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -367,7 +358,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "来电显示",
         "serviceid": "50004",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -381,7 +372,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "短信收发",
         "serviceid": "50003",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       },
       {
         "productmode": "00",
@@ -395,7 +386,7 @@ hostname = m.client.10010.com
         "productname": "联通造梦卡",
         "servicename": "语音主服务",
         "serviceid": "50000",
-        "completedateFmt": "2024-09-07 18:46:25"
+        "completedateFmt": "2024-09-07 00:00:00"
       }
     ],
     "csImg": "https://m1.img.10010.com/resources/7188192A31B5AE06E41B64DA6D65A9B0/20200422/png/20200422151005.png",
