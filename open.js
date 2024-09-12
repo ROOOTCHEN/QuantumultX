@@ -14,7 +14,7 @@
 	const authValue = headers["Authorization"] || "未找到 Authorization";
 
 	// 发送 iOS 通知
-	$notify("Authorization 值", "匹配到的请求头", authValue);
+	$notify("Authorization", "匹配到的请求头", authValue);
 	// 完成脚本
 	$done({});
 })();
