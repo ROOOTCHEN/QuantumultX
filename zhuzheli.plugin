@@ -1,0 +1,25 @@
+#!name = 住这里Cookie
+#!desc = 获取万科住这里Cookie
+#!tag = cookie
+#!icon = https://s1.locimg.com/2024/10/09/cc9e778a80b90.png
+
+/*
+[Script]
+http-request ^https:\/\/chaos\.4009515151\.com\/fd\/api.+ script-path=https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/main/zhuzheli.js, requires-header=true
+
+[MITM]
+hostname = chaos.4009515151.com
+*/
+
+// 主函数
+(async () => {
+	// 获取请求头
+	const headers = $request.headers;
+	// 获取 Authorization 的值
+	const authValue = headers["Authorization"] || "未找到 Authorization";
+
+	// 发送 iOS 通知
+	$notification.post("Authorization", "匹配到的请求头", authValue);
+	// 完成脚本
+	$done({});
+})();
