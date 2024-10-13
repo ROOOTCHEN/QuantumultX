@@ -2,7 +2,7 @@
 #!desc = 知名国际运动品牌签到-定时任务
 #!data = 2024-10-13
 #!tag = 签到
-#!icon = https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/refs/heads/main/Durex/Durex-Logo.jpg
+#!icon = https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/refs/heads/main/Durex/Durex-Logo.png
 #!author = RootChen[https://t.me/RoootChen],Levi[https://levifree.tech/]
 #!homepage =  https://github.com/ROOOTCHEN/QuantumultX
 #!loon_version = 3.2.3(762)
