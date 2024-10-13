@@ -1,6 +1,5 @@
 #!name = 杜蕾斯签到合集
 #!desc = 知名国际运动品牌签到-定时任务
-#!desc = 由Root整合修改,版权归原作者
 #!data = 2024-10-13
 #!tag = 签到
 #!icon = https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/refs/heads/main/Durex/Durex-Logo.jpg
@@ -23,13 +22,17 @@ arg6 = switch,true,tag=杜蕾斯每日签到-开关
 
 
 [Script]
+#会员宠粉遇好礼
 cron {arg1} script-path=https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/refs/heads/main/Durex/Durex_Task01.js, enable= {arg2}, tag=会员宠粉遇好礼
 
+#幸运转转转10月送好礼
 cron {arg3} script-path=https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/refs/heads/main/Durex/Durex_Task02.js, enable= {arg4}, tag=幸运转转转10月送好礼
 
+#杜蕾斯每日签到
 cron {arg5} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, enable= {arg6}, tag=杜蕾斯每日签到
 
-http-request ^https:\/\/vip\.ixiliu\.cn\/mp\/sign\/applyV2$,script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, enable= {arg0},requires-body=true, timeout=60, tag=杜蕾斯Cookie
+#获取Cookie
+http-request ^https:\/\/vip\.ixiliu\.cn\/mp\/user\/info$, script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, enable= {arg0},requires-body=true, timeout=60, tag=杜蕾斯Cookie
 
 [MITM]
 hostname = vip.ixiliu.cn
