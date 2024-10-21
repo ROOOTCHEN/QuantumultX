@@ -21,6 +21,9 @@ durex2 = switch,true,tag=幸运转转转10月送好礼 任务开关
 cron3 = input,"0 0 * * *",tag=杜蕾斯每日签到 定时任务,desc=请输入定时任务的cron表达式
 durex3 = switch,true,tag=杜蕾斯每日签到 任务开关
 
+cron4 = input,"0 0 * * *",tag=会员宠粉抽奖赢好礼 定时任务,desc=请输入定时任务的cron表达式
+durex4 = switch,true,tag=会员宠粉抽奖赢好礼 任务开关
+
 [Script]
 #会员宠粉遇好礼
 cron {cron1} script-path=https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX/refs/heads/main/Durex/Durex_Task01.js, enable= {durex1}, tag=会员宠粉遇好礼
@@ -30,6 +33,9 @@ cron {cron2} script-path=https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX
 
 #杜蕾斯每日签到
 cron {cron3} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, enable= {durex3}, tag=杜蕾斯每日签到
+
+#会员宠粉抽奖赢好礼
+cron {cron4} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, enable= {durex4}, tag=会员宠粉抽奖赢好礼
 
 #获取Cookie
 http-request ^https:\/\/vip\.ixiliu\.cn\/mp\/user\/info$ script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js,enable= {cookie}, timeout=60, tag=杜蕾斯Cookie
