@@ -35,7 +35,7 @@ cron {cron2} script-path=https://raw.githubusercontent.com/ROOOTCHEN/QuantumultX
 cron {cron3} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, enable= {durex3}, tag=杜蕾斯每日签到
 
 #会员宠粉抽奖赢好礼
-cron {cron4} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, enable= {durex4}, tag=会员宠粉抽奖赢好礼
+cron {cron4} script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/Durex_Task03.js, enable= {durex4}, tag=会员宠粉抽奖赢好礼
 
 #获取Cookie
 http-request ^https:\/\/vip\.ixiliu\.cn\/mp\/user\/info$ script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js,enable= {cookie}, timeout=60, tag=杜蕾斯Cookie
