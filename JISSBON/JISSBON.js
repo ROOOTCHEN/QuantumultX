@@ -15,7 +15,9 @@ JISSBON = switch,true,tag=每日签到 任务开关
 [Script]
 
 #获取Cookie
-http-request ^https:\/\/xh-vip-api\.a-touchin\.com\/mp\/user\/info script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js,enable= {cookie}, timeout=60, tag=杰士邦TOKNE
-
-
+http-request ^https:\/\/xh-vip-api\.a-touchin\.com\/mp\/user\/info script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js,enable= {cookie}, timeout=60, tag=杰士邦TOKNE
+#签到
 cron {cron1} script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, enable= {JISSBON}, tag=杰士邦签到
+
+[MITM]
+hostname = xh-vip-api.a-touchin.com
