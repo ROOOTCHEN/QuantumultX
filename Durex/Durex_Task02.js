@@ -1,5 +1,5 @@
 // env.js 全局
-const $ = new Env("幸运转转转10月送好礼");
+const $ = new Env("十一月杜蕾斯会员抽奖");
 const ckName = "dls_data";
 //-------------------- 一般不动变量区域 -------------------------------------
 const Notify = 1; //0为关闭通知,1为打开通知,默认为1
@@ -53,7 +53,7 @@ class UserInfo {
 	async signin() {
 		try {
 			const options = {
-				url: `https://vip.ixiliu.cn/mp/activity.lottery/draw?snId=372949728361216&channelSn=0`,
+				url: `https://vip.ixiliu.cn/mp/activity.lottery/draw?snId=376653438743296&channelSn=0`,
 				headers: {
 					"content-type": "application/json;charset=utf-8",
 					"User-Agent": "Mozilla/5.0 (iPad; CPU OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.47(0x18002f28) NetType/WIFI Language/zh_CN",
