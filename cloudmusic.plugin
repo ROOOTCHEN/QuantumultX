@@ -1,8 +1,8 @@
-#!name = 网易云音乐
-#!desc = 网易云音乐全面净化
+#!name = 网易云音乐试听会员
+#!desc = 解锁网易云音乐黑椒试听
 #!openUrl = https://apps.apple.com/app/id590338362
 #!author = RuCu6[https://github.com/RuCu6], Keywos[https://github.com/Keywos], qiuxiuya[https://github.com/qiuxiuya], 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
-#!tag = 去广告
+#!tag = 会员
 #!loon_version = 3.2.2(749)
 #!homepage = https://github.com/sooyaaabo/Loon/blob/main/README.md
 #!icon = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/App/NeteaseMusic.png
